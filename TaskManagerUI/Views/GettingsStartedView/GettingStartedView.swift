@@ -26,19 +26,24 @@ struct ImageHeader: View {
 
 struct GetStartedView: View {
     var body: some View {
-        ZStack {
-            Circle()
-                .fill(Color("White").opacity(0.5))
-                .frame(width: 75, height: 75)
-                .offset(x: -65, y: -10)
-                .shadow(color: .gray.opacity(0.3) ,radius: 10, x: 5, y: 5)
-            
-            Text("Getting Started")
-                .font(.title3)
-                .fontWeight(.semibold)
-                .foregroundStyle(Color("DarkBlue1"))
+        
+        NavigationLink {
+            Text("An Amazing New View")
+        } label: {
+            ZStack {
+                Circle()
+                    .fill(Color("White").opacity(0.5))
+                    .frame(width: 75, height: 75)
+                    .offset(x: -65, y: -10)
+                    .shadow(color: .gray.opacity(0.3) ,radius: 10, x: 5, y: 5)
+                
+                Text("Getting Started")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(Color("DarkBlue1"))
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
@@ -59,11 +64,14 @@ struct ManageTasksTextView: View {
 struct GettingStartedView: View {
     
     var body: some View {
-        ZStack {
-            Color("lightBlue")
-                .ignoresSafeArea()
-            
-            BottomOfGetttingStartedView()
+        NavigationView {
+            ZStack {
+                Color("lightBlue")
+                    .ignoresSafeArea()
+                
+                BottomOfGetttingStartedView()
+            }
+            .navigationBarHidden(true)
         }
     }
 }
