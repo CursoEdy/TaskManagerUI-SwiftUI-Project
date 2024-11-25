@@ -17,6 +17,8 @@ struct MonthlyReviewView: View {
                 endPoint: .bottomTrailing
             ).ignoresSafeArea()
             
+            TopAvatarView()
+            
             VStack {
                 HStack {
                     VStack (alignment: .leading, spacing: 7) {
