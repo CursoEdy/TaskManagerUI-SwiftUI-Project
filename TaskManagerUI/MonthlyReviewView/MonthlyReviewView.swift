@@ -17,9 +17,9 @@ struct MonthlyReviewView: View {
                 endPoint: .bottomTrailing
             ).ignoresSafeArea()
             
-            TopAvatarView()
-            
             VStack {
+                
+                TopAvatarView()
                 HStack {
                     VStack (alignment: .leading, spacing: 7) {
                         Text("Hi Edy")
