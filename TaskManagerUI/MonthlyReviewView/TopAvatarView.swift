@@ -19,7 +19,7 @@ struct TopAvatarView: View {
                 ForEach(0 ..< 20) { i in
                     let factor = 2+1.5*CGFloat(i)
                     CircleView(
-                        color: Purple2,
+                        color: purple2,
                         lineWidth: 1 / factor,
                         opacity: 2 / CGFloat(i),
                         dim: circleSize,
@@ -75,7 +75,7 @@ struct ThreeLinesMenuBar: View {
 
 #Preview {
     ZStack {
-        Purple1.ignoresSafeArea()
+        purple1.ignoresSafeArea()
         TopAvatarView()
     }
 }

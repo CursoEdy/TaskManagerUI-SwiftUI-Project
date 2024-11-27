@@ -15,12 +15,12 @@ struct CurrentTaskView: View {
                     Text("Mobile App Design")
                         .font(.headline)
                         .fontWeight(.semibold)
-                        .foregroundStyle(White)
+                        .foregroundStyle(white1)
                     
                     Text("Mike and Anite")
                         .font(.footnote)
                         .fontWeight(.light)
-                        .foregroundStyle(White)
+                        .foregroundStyle(white1)
                     
                     HStack {
                         
@@ -30,14 +30,14 @@ struct CurrentTaskView: View {
                             
                             CircleImageView(
                                 imageName: person2,
-                                color: White,
+                                color: white1,
                                 size: circleSize,
                                 lineWidth: 1
                             )
                             
                             CircleImageView(
                                 imageName: person3,
-                                color: White,
+                                color: white1,
                                 size: circleSize,
                                 lineWidth: 1
                             )
@@ -49,7 +49,7 @@ struct CurrentTaskView: View {
                             Text("Now")
                                 .font(.headline)
                                 .fontWeight(.semibold)
-                                .foregroundStyle(White)
+                                .foregroundStyle(white1)
                         }
                     }
                 }
@@ -58,7 +58,7 @@ struct CurrentTaskView: View {
             Spacer()
         }
         .padding()
-        .background(Purple3)
+        .background(purple3)
         .cornerRadius(15)
         .shadow(radius: 10)
         .padding()
@@ -69,7 +69,7 @@ struct CurrentTaskView: View {
 
 #Preview {
     ZStack {
-        Purple1.ignoresSafeArea()
+        purple1.ignoresSafeArea()
         CurrentTaskView()
     }
 }

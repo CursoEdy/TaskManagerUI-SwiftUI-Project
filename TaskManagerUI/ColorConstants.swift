@@ -9,10 +9,10 @@ import Foundation
 import SwiftUI
 
 let lightBlue = Color("lightBlue")
-let Blue1 = Color("Blue1")
-let Gray = Color("Gray")
-let Purple1 = Color("Purple1")
-let Purple2 = Color("Purple2")
-let Purple3 = Color("Purple3")
-let White = Color("White")
-let LightPurple = Color("LightPurple")
+let blue1 = Color("Blue1")
+let gray1 = Color("Gray")
+let purple1 = Color("Purple1")
+let purple2 = Color("Purple2")
+let purple3 = Color("Purple3")
+let white1 = Color("White")
+let lightPurple = Color("LightPurple")

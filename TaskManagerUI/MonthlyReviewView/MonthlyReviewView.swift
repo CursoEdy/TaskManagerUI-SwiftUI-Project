@@ -12,7 +12,7 @@ struct MonthlyReviewView: View {
         ZStack {
             
             LinearGradient(
-                colors: [LightPurple, Purple1],
+                colors: [lightPurple, purple1],
                 startPoint: .topLeading,
                 endPoint: .bottomTrailing
             ).ignoresSafeArea()
@@ -26,6 +26,8 @@ struct MonthlyReviewView: View {
                 CurrentTaskView()
                 
                 MonthlyReviewTitleView()
+                
+                TaskSumaryView()
                 
                 Spacer()
             }

@@ -13,15 +13,15 @@ struct MonthlyReviewTitleView: View {
             Text("Monthly Review")
                 .font(.title2)
                 .fontWeight(.bold)
-                .foregroundStyle(White)
+                .foregroundStyle(white1)
             
             Spacer()
             
             Image(systemName: "calendar.circle")
                 .font(.title2)
-                .foregroundStyle(White)
+                .foregroundStyle(white1)
                 .padding(8)
-                .background(Blue1)
+                .background(blue1)
                 .clipShape(Circle())
         }
         .padding()

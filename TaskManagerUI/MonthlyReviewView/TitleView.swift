@@ -21,12 +21,12 @@ struct TitleView: View {
                 Text("Hi \(nameUser)")
                     .font(.largeTitle)
                     .fontWeight(.semibold)
-                    .foregroundStyle(White)
+                    .foregroundStyle(white1)
                 
                 Text(returnPendingTasks())
                     .font(.headline)
                     .fontWeight(.light)
-                    .foregroundStyle(White)
+                    .foregroundStyle(white1)
             }
             Spacer()
         }.padding()
