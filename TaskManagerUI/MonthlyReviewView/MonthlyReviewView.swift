@@ -25,6 +25,8 @@ struct MonthlyReviewView: View {
                 
                 CurrentTaskView()
                 
+                MonthlyReviewTitleView()
+                
                 Spacer()
             }
         }
